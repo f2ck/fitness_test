@@ -1,0 +1,49 @@
+{
+  "name": "vue-test-h5",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "bootstrap": "yarn || npm i",
+    "dev": "cross-env NODE_ENV=development  vue-cli-service serve",
+    "build": "cross-env NODE_ENV=production  vue-cli-service build",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "serve": "serve -l 2753 -s dist",
+    "clear:dist": "rimraf dist",
+    "clear:node_modules": "rimraf node_modules"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "vant": "^2.12.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.1",
+    "compression-webpack-plugin": "^6.0.5",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "lib-flexible": "^0.3.2",
+    "postcss-pxtorem": "^5.1.1",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "serve": "^11.3.2",
+    "style-resources-loader": "^1.3.3",
+    "vconsole": "^3.3.4",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
